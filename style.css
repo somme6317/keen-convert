@@ -36,6 +36,10 @@ body {
     letter-spacing: 0.005em;
 }
 
+.storage-value {
+    overflow-wrap: anywhere;
+}
+
 body [class~="bg-[#0a080c]"],
 body [class~="bg-gray-950"],
 body [class~="bg-gray-950/90"],
