@@ -1,0 +1,195 @@
+:root {
+    --currency-green: #1E8449;
+    --soft-mint: #A9DFBF;
+    --accent-gold: #F1C40F;
+    --off-white: #FAFAF0;
+    --dark-olive: #145A32;
+    --muted-olive: #55705B;
+    --soft-border: #DCE8D9;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--off-white) !important;
+    color: var(--dark-olive) !important;
+    overflow-x: hidden;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body [class~="bg-[#0a080c]"],
+body [class~="bg-gray-950"],
+body [class~="bg-gray-950/90"],
+body [class~="bg-gray-950/80"] {
+    background-color: var(--off-white) !important;
+}
+
+body [class~="bg-black/90"] {
+    background-color: var(--dark-olive) !important;
+}
+
+body [class~="bg-gray-900"],
+body [class~="bg-gray-900/80"],
+body [class~="bg-gray-900/60"] {
+    background-color: #F0F7ED !important;
+}
+
+body [class~="text-white"],
+body [class~="text-gray-950"],
+body [class~="text-gray-100"],
+body [class~="text-gray-300"] {
+    color: var(--dark-olive) !important;
+}
+
+body [class~="text-gray-400"],
+body [class~="text-gray-500"] {
+    color: var(--muted-olive) !important;
+}
+
+body [class~="text-yellow-500"],
+body [class~="text-yellow-400"] {
+    color: #A98200 !important;
+}
+
+body [class~="text-emerald-400"] {
+    color: var(--currency-green) !important;
+}
+
+body [class~="bg-yellow-500"],
+body [class~="bg-yellow-400"] {
+    background-color: var(--accent-gold) !important;
+}
+
+body [class~="bg-yellow-500/10"] {
+    background-color: rgba(241, 196, 15, 0.12) !important;
+}
+
+body [class~="bg-yellow-500/5"] {
+    background-color: rgba(241, 196, 15, 0.07) !important;
+}
+
+body [class~="bg-emerald-400"] {
+    background-color: var(--currency-green) !important;
+}
+
+body [class~="border-gray-900"],
+body [class~="border-gray-800"],
+body [class~="border-gray-800/80"],
+body [class~="border-gray-700"] {
+    border-color: var(--soft-border) !important;
+}
+
+body [class~="border-yellow-500/20"] {
+    border-color: rgba(169, 223, 191, 0.8) !important;
+}
+
+body [class~="border-yellow-500/30"] {
+    border-color: rgba(30, 132, 73, 0.35) !important;
+}
+
+body [class~="hover:border-yellow-500/40"]:hover {
+    border-color: var(--currency-green) !important;
+}
+
+body [class~="hover:text-yellow-400"]:hover {
+    color: var(--currency-green) !important;
+}
+
+body [class~="hover:text-white"]:hover {
+    color: var(--dark-olive) !important;
+}
+
+body [class~="bg-black/90"] .text-gray-400 {
+    color: var(--soft-mint) !important;
+}
+
+body [class~="bg-black/90"] .text-yellow-500 {
+    color: var(--accent-gold) !important;
+}
+
+body [class~="focus:border-yellow-500"]:focus,
+body [class~="focus-within:border-yellow-500"]:focus-within {
+    border-color: var(--currency-green) !important;
+}
+
+body [class~="selection:bg-yellow-500"]::selection {
+    background-color: var(--accent-gold) !important;
+    color: var(--dark-olive) !important;
+}
+
+.gold-text {
+    background: linear-gradient(135deg, var(--currency-green) 0%, var(--dark-olive) 55%, #A98200 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow:focus {
+    border-color: var(--currency-green);
+    box-shadow: 0 0 20px rgba(30, 132, 73, 0.2);
+}
+
+.gold-btn {
+    background: linear-gradient(135deg, #F7D547 0%, var(--accent-gold) 100%);
+    color: var(--dark-olive);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gold-btn:hover {
+    background: linear-gradient(135deg, #F8DF77 0%, #D4AC0D 100%);
+    box-shadow: 0 0 25px rgba(241, 196, 15, 0.35);
+    transform: translateY(-2px);
+}
+
+.glass-panel {
+    background: rgba(255, 255, 248, 0.88);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(30, 132, 73, 0.16);
+    box-shadow: 0 10px 30px rgba(20, 90, 50, 0.08), 0 0 15px rgba(169, 223, 191, 0.12);
+}
+
+.glass-panel:hover {
+    border-color: rgba(30, 132, 73, 0.35);
+}
+
+input,
+select {
+    color-scheme: light;
+}
+
+input::placeholder {
+    color: var(--muted-olive);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--off-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--soft-mint);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--currency-green);
+}
+
+@keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-ticker {
+    display: flex;
+    width: 200%;
+    animation: ticker 35s linear infinite;
+}
+
+.animate-ticker:hover {
+    animation-play-state: paused;
+}

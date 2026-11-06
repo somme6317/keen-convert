@@ -1,0 +1,22 @@
+{
+  "base": "USD",
+  "updated": "2026-11-06",
+  "provider": "KEEN CONVERT Engine",
+  "currencies": {
+    "USD": { "name": "United States Dollar", "symbol": "$", "rate": 1.0 },
+    "EUR": { "name": "Euro", "symbol": "€", "rate": 0.9245 },
+    "GBP": { "name": "British Pound Sterling", "symbol": "£", "rate": 0.7820 },
+    "NGN": { "name": "Nigerian Naira", "symbol": "₦", "rate": 1450.00 },
+    "GHS": { "name": "Ghanaian Cedi", "symbol": "GH₵", "rate": 15.80 },
+    "KES": { "name": "Kenyan Shilling", "symbol": "KSh", "rate": 129.50 },
+    "ZAR": { "name": "South African Rand", "symbol": "R", "rate": 18.45 },
+    "OMR": { "name": "Omani Rial", "symbol": "OMR", "rate": 0.3850 },
+    "JPY": { "name": "Japanese Yen", "symbol": "¥", "rate": 155.42 },
+    "CAD": { "name": "Canadian Dollar", "symbol": "CA$", "rate": 1.3650 },
+    "AUD": { "name": "Australian Dollar", "symbol": "AU$", "rate": 1.5290 },
+    "INR": { "name": "Indian Rupee", "symbol": "₹", "rate": 83.35 },
+    "CNY": { "name": "Chinese Yuan", "symbol": "¥", "rate": 7.2300 },
+    "CHF": { "name": "Swiss Franc", "symbol": "CHF", "rate": 0.8950 },
+    "BTC": { "name": "Bitcoin", "symbol": "₿", "rate": 0.000015 }
+  }
+}
