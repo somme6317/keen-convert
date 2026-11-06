@@ -11,12 +11,29 @@
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--off-white) !important;
+    background-image: url("currency-background.svg");
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
     color: var(--dark-olive) !important;
     overflow-x: hidden;
 }
 
 .font-mono {
     font-family: 'JetBrains Mono', monospace;
+}
+
+.brand-name {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.045em;
+    font-weight: 700;
+}
+
+.welcome-copy {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.85;
+    letter-spacing: 0.005em;
 }
 
 body [class~="bg-[#0a080c]"],
@@ -95,6 +112,42 @@ body [class~="hover:border-yellow-500/40"]:hover {
 
 body [class~="hover:text-yellow-400"]:hover {
     color: var(--currency-green) !important;
+}
+
+.nav-links,
+.mobile-nav-links {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.015em;
+}
+
+.nav-link {
+    border-radius: 0.75rem;
+    color: var(--dark-olive);
+    font-weight: 600;
+    transition: color 180ms ease, background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.nav-links .nav-link {
+    padding: 0.6rem 0.75rem;
+}
+
+.mobile-nav-links .nav-link {
+    padding: 0.65rem 0.85rem;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    color: var(--currency-green) !important;
+    background-color: rgba(169, 223, 191, 0.3);
+    box-shadow: 0 0 0 1px rgba(30, 132, 73, 0.16), 0 0 14px rgba(30, 132, 73, 0.2), 0 0 22px rgba(241, 196, 15, 0.12);
+    outline: none;
+    transform: translateY(-1px);
+}
+
+.nav-link:hover i,
+.nav-link:focus-visible i {
+    color: #A98200 !important;
+    text-shadow: 0 0 8px rgba(241, 196, 15, 0.5);
 }
 
 body [class~="hover:text-white"]:hover {
@@ -192,4 +245,10 @@ input::placeholder {
 
 .animate-ticker:hover {
     animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-link {
+        transition: none;
+    }
 }

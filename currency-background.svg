@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+  <defs>
+    <pattern id="currency" width="300" height="240" patternUnits="userSpaceOnUse" patternTransform="rotate(-16)">
+      <g fill="#1e8449" fill-opacity=".08" font-family="Georgia,serif" font-weight="700" text-anchor="middle">
+        <text x="75" y="84" font-size="54">$</text>
+        <text x="225" y="194" font-size="48">€</text>
+      </g>
+      <g fill="none" stroke="#d4ac0d" stroke-opacity=".11">
+        <circle cx="225" cy="55" r="27" stroke-width="2"/>
+        <circle cx="225" cy="55" r="20"/>
+        <circle cx="75" cy="175" r="19" stroke-width="2"/>
+        <circle cx="75" cy="175" r="13"/>
+      </g>
+      <g fill="#145a32" fill-opacity=".06" font-family="Georgia,serif" font-weight="700" text-anchor="middle">
+        <text x="225" y="66" font-size="30">¥</text>
+        <text x="75" y="184" font-size="22">£</text>
+      </g>
+    </pattern>
+    <radialGradient id="wash" cx="0" cy="0" r="1" gradientTransform="matrix(900 700 -900 700 600 180)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a9dfbf" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#fafaf0" stop-opacity=".02"/>
+    </radialGradient>
+  </defs>
+  <path fill="#fafaf0" d="M0 0h1200v900H0z"/>
+  <path fill="url(#wash)" d="M0 0h1200v900H0z"/>
+  <path fill="url(#currency)" d="M0 0h1200v900H0z"/>
+</svg>

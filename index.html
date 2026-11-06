@@ -9,10 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <!-- Google Fonts: Space Grotesk, DM Sans, Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <!-- Chart.js for Market Trend Analytics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Custom Stylesheet -->
@@ -40,17 +40,17 @@
                     <i class="fa-solid fa-money-bill-transfer text-gray-950 text-lg"></i>
                 </div>
                 <div>
-                    <span class="text-xl font-extrabold tracking-wider gold-text">KEEN CONVERT</span>
+                    <span class="brand-name text-xl font-extrabold tracking-wider gold-text">KEEN CONVERT</span>
                     <span class="block text-[10px] text-gray-400 font-mono tracking-widest uppercase">Institutional Tool</span>
                 </div>
             </div>
 
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
-                <a href="#hero" class="hover:text-yellow-400 transition-all flex items-center space-x-1.5"><i class="fa-solid fa-compass text-yellow-500 text-xs"></i><span>Overview</span></a>
-                <a href="#converter" class="hover:text-yellow-400 transition-all flex items-center space-x-1.5"><i class="fa-solid fa-calculator text-yellow-500 text-xs"></i><span>Converter</span></a>
-                <a href="#analytics" class="hover:text-yellow-400 transition-all flex items-center space-x-1.5"><i class="fa-solid fa-chart-line text-yellow-500 text-xs"></i><span>Trends</span></a>
-                <a href="#guide" class="hover:text-yellow-400 transition-all flex items-center space-x-1.5"><i class="fa-solid fa-book text-yellow-500 text-xs"></i><span>Guide</span></a>
-                <a href="#testimonials" class="hover:text-yellow-400 transition-all flex items-center space-x-1.5"><i class="fa-solid fa-users text-yellow-500 text-xs"></i><span>Reviews</span></a>
+            <div class="nav-links hidden md:flex items-center space-x-2 text-sm font-medium text-gray-300">
+                <a href="#hero" class="nav-link flex items-center space-x-1.5"><i class="fa-solid fa-compass text-yellow-500 text-xs"></i><span>Overview</span></a>
+                <a href="#converter" class="nav-link flex items-center space-x-1.5"><i class="fa-solid fa-calculator text-yellow-500 text-xs"></i><span>Converter</span></a>
+                <a href="#analytics" class="nav-link flex items-center space-x-1.5"><i class="fa-solid fa-chart-line text-yellow-500 text-xs"></i><span>Trends</span></a>
+                <a href="#guide" class="nav-link flex items-center space-x-1.5"><i class="fa-solid fa-book text-yellow-500 text-xs"></i><span>Guide</span></a>
+                <a href="#testimonials" class="nav-link flex items-center space-x-1.5"><i class="fa-solid fa-users text-yellow-500 text-xs"></i><span>Reviews</span></a>
             </div>
 
             <div class="hidden md:flex items-center space-x-3">
@@ -65,12 +65,12 @@
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-950 border-b border-gray-800 px-6 py-4 space-y-3 text-sm font-medium">
-            <a href="#hero" class="block text-gray-300 hover:text-yellow-400">Overview</a>
-            <a href="#converter" class="block text-gray-300 hover:text-yellow-400">Converter</a>
-            <a href="#analytics" class="block text-gray-300 hover:text-yellow-400">Trends</a>
-            <a href="#guide" class="block text-gray-300 hover:text-yellow-400">Guide</a>
-            <a href="#testimonials" class="block text-gray-300 hover:text-yellow-400">Reviews</a>
+        <div id="mobile-menu" class="mobile-nav-links hidden md:hidden bg-gray-950 border-b border-gray-800 px-6 py-4 space-y-2 text-sm font-medium">
+            <a href="#hero" class="nav-link block">Overview</a>
+            <a href="#converter" class="nav-link block">Converter</a>
+            <a href="#analytics" class="nav-link block">Trends</a>
+            <a href="#guide" class="nav-link block">Guide</a>
+            <a href="#testimonials" class="nav-link block">Reviews</a>
         </div>
     </nav>
 
@@ -89,7 +89,7 @@
                 <span class="gold-text">Currency Converter</span>
             </h1>
             
-            <p class="text-gray-400 text-base leading-relaxed">
+            <p class="welcome-copy text-gray-400 text-base leading-relaxed">
                 Welcome to KEEN CONVERT! Easily check exchange rates between global currencies, calculate amounts instantly with zero lag, and save your preferred conversion settings automatically using browser storage.
             </p>
 
@@ -335,7 +335,7 @@
                     <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-yellow-600 to-amber-400 flex items-center justify-center text-gray-950 font-bold">
                         <i class="fa-solid fa-money-bill-transfer text-xs"></i>
                     </div>
-                    <span class="text-lg font-bold text-white tracking-wider gold-text">KEEN CONVERT</span>
+                    <span class="brand-name text-lg font-bold text-white tracking-wider gold-text">KEEN CONVERT</span>
                 </div>
                 <p class="leading-relaxed">Institutional-grade currency conversion platform.</p>
             </div>
